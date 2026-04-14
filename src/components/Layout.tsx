@@ -1,11 +1,13 @@
 import { ReactNode } from "react";
-import BottomNav from "./BottomNav";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="min-h-screen bg-background">
-      <main className="pb-24">{children}</main>
-      <BottomNav />
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navbar />
+      <main className="pt-16 flex-1">{children}</main>
+      <Footer />
     </div>
   );
 };
