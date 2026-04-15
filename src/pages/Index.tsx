@@ -5,6 +5,8 @@ import heroImg from "@/assets/hero-charcoal.jpg";
 import restaurantImg from "@/assets/charcoal-restaurant.jpg";
 import bbqImg from "@/assets/charcoal-bbq.jpg";
 import briquettesImg from "@/assets/charcoal-briquettes.jpg";
+import nonsparkingImg from "@/assets/charcoal-nonsparking.jpg";
+import mixedImg from "@/assets/charcoal-mixed.jpg";
 
 const Index = () => {
   return (
@@ -70,11 +72,13 @@ const Index = () => {
         <p className="text-muted-foreground mb-12 max-w-xl">
           Three core product lines, each meticulously processed to meet the highest international standards.
         </p>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
           {[
-            { img: restaurantImg, title: "Restaurant-Grade", specs: "Size 50–200mm · Fixed Carbon >80%", desc: "Ideal for restaurants, grills, and high-heat cooking environments." },
-            { img: bbqImg, title: "BBQ Charcoal", specs: "Size 10–49mm · Quick Ignition", desc: "Perfect for home use, supermarkets, and outdoor grilling." },
-            { img: briquettesImg, title: "Charcoal Briquettes", specs: "Consistent Shape · Low Smoke", desc: "Clean, uniform, and long-lasting briquettes from compressed charcoal fines." },
+            { img: restaurantImg, title: "Restaurant-Grade", specs: "Size 50–200mm · Fixed Carbon >80%", desc: "Ideal for restaurants, grills, and high-heat cooking." },
+            { img: bbqImg, title: "BBQ Charcoal", specs: "Size 10–49mm · Quick Ignition", desc: "Perfect for home use and outdoor grilling." },
+            { img: briquettesImg, title: "Charcoal Briquettes", specs: "Consistent Shape · Low Smoke", desc: "Clean, uniform, and long-lasting briquettes." },
+            { img: nonsparkingImg, title: "Non-Sparking Lump", specs: "No Sparks · High Heat", desc: "Spark-free charcoal for restaurants and hotels." },
+            { img: mixedImg, title: "Mixed Charcoal", specs: "50/50 Ayin Blend", desc: "Ayin and non-sparking charcoal blend." },
           ].map((product) => (
             <Link
               key={product.title}
