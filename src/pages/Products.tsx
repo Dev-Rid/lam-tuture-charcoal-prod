@@ -3,9 +3,15 @@ import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import restaurantImg from "@/assets/charcoal-restaurant.jpg";
 import bbqImg from "@/assets/charcoal-bbq.jpg";
+<<<<<<< HEAD
 import briquettesImg from "@/assets/charcoal-products-hero.jpg";
 import nonsparkingImg from "@/assets/hero-charcoal.jpg";
 import mixedImg from "@/assets/charcoal-briquettes.jpg";
+=======
+import briquettesImg from "@/assets/charcoal-briquettes.jpg";
+import nonsparkingImg from "@/assets/charcoal-nonsparking.jpg";
+import mixedImg from "@/assets/charcoal-mixed.jpg";
+>>>>>>> 6689a0cece064ef5301ef96cae0557b6d82f9308
 
 const products = [
   {
