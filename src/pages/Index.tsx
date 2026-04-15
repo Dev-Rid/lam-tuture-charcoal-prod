@@ -5,6 +5,8 @@ import heroImg from "@/assets/hero-charcoal.jpg";
 import restaurantImg from "@/assets/charcoal-restaurant.jpg";
 import bbqImg from "@/assets/charcoal-bbq.jpg";
 import briquettesImg from "@/assets/charcoal-briquettes.jpg";
+import nonsparkingImg from "@/assets/charcoal-nonsparking.jpg";
+import mixedImg from "@/assets/charcoal-mixed.jpg";
 
 const Index = () => {
   return (
