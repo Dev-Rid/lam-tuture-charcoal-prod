@@ -8,6 +8,7 @@ import briquettesImg from "@/assets/charcoal-briquettes.jpg";
 import nonsparkingImg from "@/assets/charcoal-nonsparking.jpg";
 import mixedImg from "@/assets/charcoal-mixed.jpg";
 
+
 const Index = () => {
   return (
     <div>
