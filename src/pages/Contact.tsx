@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Clock, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -35,9 +35,16 @@ const Contact = () => {
             <MapPin className="w-6 h-6 text-primary mb-3" />
             <h3 className="font-serif text-lg font-bold mb-2">Office Address</h3>
             <p className="text-muted-foreground text-sm">
-              KM 7, Idere–Igboora Road,<br />
-              Behind School of Missions,<br />
-              Idere, Oyo State, Nigeria.
+            103 Shields Rd, Newcastle upon Tyne NE6 1DN
+              <Phone className="w-4 h-4 shrink-0" />
+                  <a
+                    href="https://wa.me/07355795872"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                   07355795872
+                </a>        
             </p>
           </div>
           <div className="p-6 rounded-xl border border-border">

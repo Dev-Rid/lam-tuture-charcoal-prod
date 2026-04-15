@@ -21,12 +21,12 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
         <div className="relative z-10 container mx-auto px-6 py-20">
           <p className="section-label mb-4">Sustainably Produced · Export-Ready</p>
-          <h1 className="text-6xl md:text- file:8xl font-bold leading-[0.95] mb-6 max-w-3xl">
+          <h1 className="text-6xl md:text-8xl font-bold leading-[0.95] mb-6 max-w-3xl">
             Premium{" "}
             <em className="text-primary">Nigerian</em>{" "}
             Hardwood Charcoal
           </h1>
-          <p className="text-muted-foreground text-lg max-w-md mb-8">
+          <p className="text-muted-foreground text-lg max-w-md mb-8 text-gray-800">
             Professionally processed for global markets. Delivering consistent quality and reliable supply to clients across the world.
           </p>
           <div className="flex gap-4 flex-wrap">
@@ -149,7 +149,7 @@ const Index = () => {
       <section className="py-24 container mx-auto px-6 text-center">
         <h2 className="section-title mb-6">Ready to Partner?</h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-          Whether you need restaurant-grade charcoal, BBQ charcoal, or custom briquettes — we deliver world-class quality at competitive rates.
+          Whether you need restaurant-grade charcoal, BBQ charcoal, Charcoal Briquettes, Mixed Charcoal or Non sparking Charcoal — we deliver world-class quality at competitive rates.
         </p>
         <Button asChild size="lg" className="rounded-full px-10">
           <Link to="/contact">Get in Touch <ArrowRight className="ml-2 w-4 h-4" /></Link>
