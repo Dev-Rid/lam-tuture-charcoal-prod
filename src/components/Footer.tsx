@@ -41,7 +41,14 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-dark-green-foreground/60">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                <span>Lagos, Nigeria</span>
+                <span>
+                    <span className="font-boldho">
+                      Lam-Tuture Nigeria Limited
+                    </span>
+                    KM 7, Idere–Igboora Road,
+                    Behind School of Missions,
+                    Idere, Oyo State, Nigeria.
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0" />

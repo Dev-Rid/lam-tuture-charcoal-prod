@@ -21,7 +21,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
         <div className="relative z-10 container mx-auto px-6 py-20">
           <p className="section-label mb-4">Sustainably Produced · Export-Ready</p>
-          <h1 className="text-6xl md:text-8xl font-bold leading-[0.95] mb-6 max-w-3xl">
+          <h1 className="text-6xl md:text- file:8xl font-bold leading-[0.95] mb-6 max-w-3xl">
             Premium{" "}
             <em className="text-primary">Nigerian</em>{" "}
             Hardwood Charcoal
@@ -34,7 +34,7 @@ const Index = () => {
               <Link to="/contact">
                 Request a Quote <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
-            </Button>
+            </Button> 
             <Button asChild variant="outline" size="lg" className="rounded-full px-8">
               <Link to="/about">
                 <Download className="mr-2 w-4 h-4" /> Company Profile

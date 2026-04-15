@@ -17,7 +17,7 @@ const products = [
       { label: "MOISTURE", value: "<5%" },
     ],
     features: ["Long burning time", "Low smoke", "High heat output", "Minimal ash"],
-    packaging: "Packaging: 20kg, 25kg, 50kg PP bags",
+    packaging: "Packaging: 20kg, 25kg, 50kg PP bags, 40ft container: 19–21 tons",
   },
   {
     label: "PRODUCT 02",
@@ -27,10 +27,10 @@ const products = [
     specs: [
       { label: "SIZE", value: "10–49 mm" },
       { label: "IGNITION", value: "Quick" },
-      { label: "MOISTURE", value: "<5%" },
+      { label: "HEAT", value: "Steady" },
     ],
     features: ["Quick ignition", "Consistent heat", "Clean burning", "Easy to handle"],
-    packaging: "Packaging: 3kg, 5kg, 10kg retail bags",
+    packaging: "5kg, 10kg, 20kg, 25kg, 50kg bags",
   },
   {
     label: "PRODUCT 03",
@@ -38,12 +38,13 @@ const products = [
     desc: "Clean, uniform, and long-lasting briquettes from compressed charcoal fines.",
     img: briquettesImg,
     specs: [
-      { label: "SHAPE", value: "Pillow/Hex" },
-      { label: "BURN TIME", value: "2–3 hrs" },
+      { label: "SHAPE", value: "Hex" },
+      { label: "BURN TIME", value: "Long" },
       { label: "SMOKE", value: "Low" },
     ],
     features: ["Consistent shape", "Low smoke", "Long lasting", "Eco-friendly"],
-    packaging: "Packaging: 5kg, 10kg, 20kg bags",
+    // packaging: "Packaging: 5kg, 10kg, 20kg bags",
+    packaging: "5kg–20kg retail bags, 40ft container: 19–21 tons"
   },
 ];
 
