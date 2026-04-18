@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, Info, Package, Factory, Ship, Leaf, Mail, Menu, X } from "lucide-react";
+import { Home, Info, Package, Factory, Ship, Leaf, Mail, Menu, X, Image } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
@@ -20,7 +20,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark-green/95 backdrop-blur-md shadow-lg">
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
         <Link to="/" className="font-serif text-xl font-bold text-dark-green-foreground">
-          LAM-Tuture
+          <img src="/lamtuturelogo.jpeg" alt="Logo" className="w-12 h-12 ml-2 rounded-sm"  />
         </Link>
 
         {/* Desktop nav */}

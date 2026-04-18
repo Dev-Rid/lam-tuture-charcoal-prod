@@ -28,7 +28,7 @@ const Index = () => {
             Premium{" "}
             <em className="text-primary">Nigerian</em>{" "}
             Hardwood Charcoal
-          </h1>
+          </h1> 
           <p className="text-muted-foreground text-lg max-w-md mb-8 text-gray-800">
             Professionally processed for global markets. Delivering consistent quality and reliable supply to clients across the world.
           </p>
