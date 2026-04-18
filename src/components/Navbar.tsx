@@ -20,7 +20,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark-green/95 backdrop-blur-md shadow-lg">
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
         <Link to="/" className="font-serif text-xl font-bold text-dark-green-foreground">
-          <img src="/lamtuturelogo.jpeg" alt="Logo" className="w-10 h-10 md:w-12 md:h-12 ml-2 rounded-sm"  />
+          <img src="/lamtuturelogo.jpeg" alt="Logo" className="w-10 h-10 md:w-12 md:h-12 ml-0 md:ml-2 rounded-sm"  />
         </Link>
 
         {/* Desktop nav */}
