@@ -29,7 +29,7 @@ const Index = () => {
             <em className="text-primary">Nigerian</em>{" "}
             Hardwood Charcoal
           </h1> 
-          <p className="text-muted-foreground text-lg max-w-md mb-8 text-gray-950 md:text-gray-800">
+          <p className="text-muted-foreground text-lg max-w-md mb-8 text-gray-900 ">
             Professionally processed for global markets. Delivering consistent quality and reliable supply to clients across the world.
           </p>
           <div className="flex gap-4 flex-wrap">
