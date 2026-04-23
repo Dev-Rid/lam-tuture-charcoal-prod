@@ -52,7 +52,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-24 container mx-auto px-6">
+      <section className="py-4 container mx-auto px-6">
         <p className="section-label mb-3">About LAM-Tuture</p>
         <h2 className="section-title mb-6">Rooted in Quality, Built for Export</h2>
         <p className="text-muted-foreground max-w-2xl text-lg leading-relaxed mb-6">
@@ -67,11 +67,11 @@ const Index = () => {
       </section>
 
       {/* Products Section */}
-      <section className="py-24 container mx-auto px-6">
+      <section className="py-14 container mx-auto px-6">
         <p className="section-label mb-3">Our Products</p>
         <h2 className="section-title mb-4">Engineered for Performance</h2>
         <p className="text-muted-foreground mb-12 max-w-xl">
-          Three core product lines, each meticulously processed to meet the highest international standards.
+          Five core product lines, each meticulously processed to meet the highest international standards.
         </p>
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
           {[
@@ -107,7 +107,7 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 container mx-auto px-6">
+      <section className="py-8 container mx-auto px-6">
         <p className="section-label mb-3">Why Choose Us</p>
         <h2 className="section-title mb-12">The LAM-Tuture Advantage</h2>
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -128,7 +128,7 @@ const Index = () => {
       </section>
 
       {/* Export Destinations */}
-      <section className="py-24 container mx-auto px-6">
+      <section className="py-10 container mx-auto px-6">
         <p className="section-label mb-3">Global Reach</p>
         <h2 className="section-title mb-4">Export Destinations</h2>
         <p className="text-muted-foreground mb-12 max-w-xl">
@@ -151,7 +151,7 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 container mx-auto px-6 text-center">
+      <section className="py-14 container mx-auto px-6 text-center">
         <h2 className="section-title mb-6">Ready to Partner?</h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
           Whether you need restaurant-grade charcoal, BBQ charcoal, Charcoal Briquettes, Mixed Charcoal or Non sparking Charcoal — we deliver world-class quality at competitive rates.

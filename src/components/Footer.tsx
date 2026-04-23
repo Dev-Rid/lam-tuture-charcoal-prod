@@ -63,12 +63,13 @@ const Footer = () => {
 
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 shrink-0" />
-                  <span className="break-all">info@domain.com</span>
+                  <span className="break-all">info@lamtuture.com</span>
                 </li>
 
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 shrink-0" />
                   <span className="hover:text-dark-green-foreground transition-colors">+2348134229301</span>
+                  <span className="hover:text-dark-green-foreground transition-colors">+2348141997509 </span>
                 </li>
               </ul>
             </div>
@@ -82,6 +83,7 @@ const Footer = () => {
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 mt-1 shrink-0" />
                   <span className="leading-relaxed">
+                    <p className="text-base sm:text-lg">UK Office</p>
                     103 Shields Rd, Newcastle upon Tyne NE6 1DN
                     United Kingdom
                   </span>
@@ -95,7 +97,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="hover:text-dark-green-foreground transition-colors"
                   >
-                    +447586554460
+                    +44758655446
                   </a>
                 </li>
               </ul>
