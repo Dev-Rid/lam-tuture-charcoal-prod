@@ -63,22 +63,22 @@ const Footer = () => {
 
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 shrink-0" />
-                  <span className="break-all">info@lamtuture.com</span>
+                  <span className="break-all hover:text-dark-green-foreground transition-colors">info@lamtuture.com</span>
                 </li>
 
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 shrink-0" />
-                  <span className="hover:text-dark-green-foreground transition-colors">+2348134229301</span>
-                  <span className="hover:text-dark-green-foreground transition-colors">+2348141997509 </span>
+                  <span className="hover:text-dark-green-foreground transition-colors">+2348134229301</span> |
+                  <span className="hover:text-dark-green-foreground transition-colors">+2348141997509  </span>
                 </li>
               </ul>
             </div>
 
             {/* divtwo contact */}
             <div>
-              <h4 className="font-semibold mb-4 text-xs sm:text-sm uppercase tracking-wider">
+              {/* <h4 className="font-semibold mb-4 text-xs sm:text-sm uppercase tracking-wider">
                 Contact
-              </h4>
+              </h4> */}
               <ul className="space-y-3 text-sm text-dark-green-foreground/60">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 mt-1 shrink-0" />
