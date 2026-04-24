@@ -33,25 +33,28 @@ const Contact = () => {
         <div className="space-y-6">
           <div className="p-6 rounded-xl border border-border">
             <MapPin className="w-6 h-6 text-primary mb-3" />
-            <h3 className="font-serif text-lg font-bold mb-2">Office Address</h3>
+            <h3 className="font-serif text-lg font-bold mb-2">Wareouse Address</h3>
             <p className="text-muted-foreground text-sm">
-            103 Shields Rd, Newcastle upon Tyne NE6 1DN
-              <Phone className="w-4 h-4 shrink-0" />
-                  <a
-                    href="https://wa.me/07355795872"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary transition-colors"
-                  >
-                   07355795872
-                </a>        
+            103 Shields Rd, Newcastle upon Tyne NE6 1DN United Kingdom
+              
+              <div className="flex hover:text-primary transition-colors">
+                <Phone className="w-4 h-4 shrink-0 " />
+                <a
+                  href="https://wa.me/08134229301"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  +2348134229301
+              </a>        
+              </div>
             </p>
           </div>
           <div className="p-6 rounded-xl border border-border">
             <Clock className="w-6 h-6 text-primary mb-3" />
             <h3 className="font-serif text-lg font-bold mb-2">Business Hours</h3>
             <p className="text-muted-foreground text-sm">
-              Monday – Saturday: 8:00 AM – 6:00 PM<br />
+              Monday – Saturday: 8:00AM – 6:00PM<br />
               Sunday: Closed
             </p>
           </div>
@@ -79,10 +82,13 @@ const Contact = () => {
                 <SelectTrigger>
                   <SelectValue placeholder="Select a product" />
                 </SelectTrigger>
+                
                 <SelectContent>
                   <SelectItem value="restaurant">Restaurant-Grade Charcoal</SelectItem>
                   <SelectItem value="bbq">BBQ Charcoal</SelectItem>
                   <SelectItem value="briquettes">Charcoal Briquettes</SelectItem>
+                  <SelectItem value="briquettes">Non-Sparking Lump</SelectItem>
+                  <SelectItem value="briquettes">Mixed Charcoal</SelectItem>
                 </SelectContent>
               </Select>
             </div>

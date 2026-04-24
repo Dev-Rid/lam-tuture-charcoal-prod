@@ -68,8 +68,10 @@ const Footer = () => {
 
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 shrink-0" />
-                  <span className="hover:text-dark-green-foreground transition-colors">+2348134229301</span> |
-                  <span className="hover:text-dark-green-foreground transition-colors">+2348141997509  </span>
+                  <div className="">
+                    <span className="hover:text-dark-green-foreground transition-colors">+2348134229301</span> |                   
+                    <span className="hover:text-dark-green-foreground transition-colors"> +2348141997509  </span>
+                  </div>
                 </li>
               </ul>
             </div>
