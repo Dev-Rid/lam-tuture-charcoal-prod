@@ -5,7 +5,7 @@ const About = () => {
     <div className="container mx-auto px-6 pt-32 pb-16">
       <p className="section-label mb-3">About Us</p>
       <h1 className="section-title mb-6">Who We Are</h1>
-      <p className="text-muted-foreground max-w-2xl text-lg leading-relaxed mb-16">
+      <p className="text-muted-foreground max-w-2xl text-lg leading-relaxed mb-6">
         Lam-Tuture Nigeria Limited is a forward-thinking charcoal production, warehousing, distribution and export company incorporated on 13 August 2024.
       </p>
 
