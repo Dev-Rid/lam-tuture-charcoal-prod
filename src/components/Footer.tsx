@@ -55,9 +55,9 @@ const Footer = () => {
                   <MapPin className="w-5 h-5 mt-1 shrink-0" />
                   <span className="leading-relaxed">
                     <p className="text-base sm:text-lg">Nigeria Office</p>
-                    KM 7, Idere–Igboora Road,
-                    Behind School of Missions,
-                    Idere, Oyo State, Nigeria.
+                      KM 7, Idere–Igboora Road
+                      Behind School of Missions
+                      Idere, Oyo State, Nigeria
                   </span>
                 </li>
 
@@ -99,7 +99,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="hover:text-dark-green-foreground transition-colors"
                   >
-                    +44758655446
+                    +447586554460
                   </a>
                 </li>
               </ul>
