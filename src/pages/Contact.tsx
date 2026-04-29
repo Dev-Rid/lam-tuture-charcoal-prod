@@ -5,19 +5,71 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", quantity: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+
+    try {
+      await emailjs.send(
+        "service_1xy62im",
+        "template_hmlqbdm",
+        form,
+        "IGANJTyeVKx8_IPfc"
+      );
+
       toast({ title: "Message sent!", description: "We'll get back to you shortly." });
-    }, 1000);
-  };
+
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        quantity: "",
+        message: "",
+      });
+
+    } catch (error) {
+      console.error(error);
+      toast({ title: "Error", description: "Failed to send message." });
+    }
+
+    setLoading(false);
+    };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+    
+  //     emailjs.send(
+  //       "service_1xy62im",
+  //       "template_hmlqbdm",
+  //       form,
+  //       "IGANJTyeVKx8_IPfc"
+  //     )
+  //     .then(() => {
+  //       alert("Message sent successfully!");
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //       alert("Failed to send message.");
+  //     });
+  //   // toast({ title: "Message sent!", description: "We'll get back to you shortly." });
+  //   // setForm({ name: "", email: "", phone: "", service: "", date: "", message: "" });
+
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     toast({ title: "Message sent!", description: "We'll get back to you shortly." });
+  //     setForm({ name: "", email: "", phone: "", service: "", quantity: "", message: "" });
+  //   }, 1000);
+
+  // };
 
   return (
     <div className="container mx-auto px-6 pt-32 pb-16">
@@ -33,14 +85,14 @@ const Contact = () => {
         <div className="space-y-6">
           <div className="p-6 rounded-xl border border-border">
             <MapPin className="w-6 h-6 text-primary mb-3" />
-            <h3 className="font-serif text-lg font-bold mb-2">Wareouse Address</h3>
+            <h3 className="font-serif text-lg font-bold mb-2">Warehouse Address</h3>
             <p className="text-muted-foreground text-sm">
-            103 Shields Rd, Newcastle upon Tyne NE6 1DN United Kingdom
+               Shields Rd, Newcastle upon Tyne NE6 1DN United Kingdom
               
               <div className="flex hover:text-primary transition-colors">
                 <Phone className="w-4 h-4 shrink-0 " />
                 <a
-                  href="https://wa.me/08134229301"
+                  href="https://wa.me/2348134229301"
                   target="_blank"
                   rel="noopener noreferrer"
                   className=""
@@ -64,42 +116,70 @@ const Contact = () => {
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="text-sm font-medium mb-1.5 block">Full Name *</label>
-              <Input placeholder="Your full name" required />
+              <Input 
+                placeholder="Your full name" 
+                required 
+                value={form.name} 
+                onChange={(e) => setForm({ ...form, name: e.target.value })} 
+                />
             </div>
             <div>
               <label className="text-sm font-medium mb-1.5 block">Email Address *</label>
-              <Input type="email" placeholder="your@email.com" required />
+              <Input 
+                type="email" 
+                placeholder="your@email.com" 
+                required 
+                value={form.email} 
+                onChange={(e) => setForm({ ...form, email: e.target.value })} 
+                />
             </div>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="text-sm font-medium mb-1.5 block">Phone Number</label>
-              <Input placeholder="+234..." />
+              <Input 
+                placeholder="+234..."
+                value={form.phone} 
+                onChange={(e) => setForm({ ...form, phone: e.target.value })} 
+                />
             </div>
             <div>
               <label className="text-sm font-medium mb-1.5 block">Product of Interest</label>
-              <Select>
+              <Select
+                  value={form.service}
+                  onValueChange={(value) => setForm({ ...form, service: value })}
+                >
                 <SelectTrigger>
                   <SelectValue placeholder="Select a product" />
                 </SelectTrigger>
-                
+
                 <SelectContent>
-                  <SelectItem value="restaurant">Restaurant-Grade Charcoal</SelectItem>
-                  <SelectItem value="bbq">BBQ Charcoal</SelectItem>
-                  <SelectItem value="briquettes">Charcoal Briquettes</SelectItem>
-                  <SelectItem value="briquettes">Non-Sparking Lump</SelectItem>
-                  <SelectItem value="briquettes">Mixed Charcoal</SelectItem>
+                  <SelectItem value="restaurantcharcoal">Restaurant-Grade Charcoal</SelectItem>
+                  <SelectItem value="bbqcharcoal">BBQ Charcoal</SelectItem>
+                  <SelectItem value="charcoalbriquettes">Charcoal Briquettes</SelectItem>
+                  <SelectItem value="nonsparkinglump">Non-Sparking Lump</SelectItem>
+                  <SelectItem value="mixedcharcoal">Mixed Charcoal</SelectItem>
                 </SelectContent>
               </Select>
             </div>
           </div>
           <div>
             <label className="text-sm font-medium mb-1.5 block">Quantity Required</label>
-            <Input placeholder="e.g., 20 tons per month" />
+            <Input 
+              placeholder="e.g., 20 tons per month"
+              value={form.quantity} 
+              onChange={(e) => setForm({ ...form, quantity: e.target.value })} 
+            />
+
           </div>
           <div>
             <label className="text-sm font-medium mb-1.5 block">Message</label>
-            <Textarea placeholder="Tell us about your requirements..." rows={4} />
+            <Textarea 
+              placeholder="Tell us about your requirements..." 
+              rows={4} 
+              value={form.message} 
+              onChange={(e) => setForm({ ...form, message: e.target.value })} 
+              />
           </div>
           <Button type="submit" size="lg" className="w-full rounded-full" disabled={loading}>
             {loading ? "Sending..." : "Send Inquiry"} <ArrowRight className="ml-2 w-4 h-4" />
