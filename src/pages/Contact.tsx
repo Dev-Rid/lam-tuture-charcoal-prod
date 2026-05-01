@@ -58,7 +58,8 @@ const Contact = () => {
 
       toast({
         title: "Message sent!",
-        description: "We'll get back to you shortly.",
+        description: "Dear Customer, Thank you for contacting Lam Tuture Ltd, a premium charcoal producer in Nigeria. We appreciate your interest in our products and services. This is to confirm that we have received your message. Our team will review your enquiry and respond within 24 hours. If your request is urgent, please feel free to contact us directly via phone: +234 814 199 7509 or +234 813 422 9301. We look forward to assisting you and meeting your needs. Kind regards, Lam Tuture Ltd Customer Support Team",
+        duration: 5000 // 5 minutes
       });
 
       // ✅ CLEAR FORM
